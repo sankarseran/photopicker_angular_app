@@ -16,7 +16,7 @@ export class AppComponent {
   public errors: WebcamInitError[] = [];
 
   // latest snapshot
-  public webcamImage: WebcamImage = null;
+  public webcamImage: WebcamImage | undefined;
 
   // webcam snapshot trigger
   private trigger: Subject<void> = new Subject<void>();
